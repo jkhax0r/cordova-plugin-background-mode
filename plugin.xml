@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-background-mode"
+        id="cordova-plugin-background-mode-jk"
         version="0.7.2">
 
     <name>BackgroundMode</name>
@@ -34,7 +34,7 @@
     </js-module>
 
     <!-- ios -->
-    <platform name="ios">
+    <!--<platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="BackgroundMode">
                 <param name="ios-package" value="APPBackgroundMode" />
@@ -54,6 +54,7 @@
         <header-file src="src/ios/APPMethodMagic.h" />
         <source-file src="src/ios/APPMethodMagic.m" />
     </platform>
+-->
 
     <!-- android -->
     <platform name="android">
