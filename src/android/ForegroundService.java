@@ -177,6 +177,8 @@ public class ForegroundService extends Service {
         if (settings.optBoolean("hidden", true)) {
             notification.setPriority(Notification.PRIORITY_MIN);
         }
+        
+        Log.e(TAG, "bigText" + bigText + " text=" + text);
 
         if (bigText || text.contains("\n")) {
             notification.setStyle(
