@@ -85,6 +85,12 @@ public class ForegroundService extends Service {
         }
     }
 
+    // Force service to be restarted if it is killed
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        return START_STICKY;
+    }
+    
     /**
      * Put the service in a foreground state to prevent app from being killed
      * by the OS.
