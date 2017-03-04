@@ -50,11 +50,11 @@ public class ForegroundService extends Service {
 
     // Default title of the background notification
     private static final String NOTIFICATION_TITLE =
-            "App is running in background";
+            "Low power scanning active...";   
 
     // Default text of the background notification
     private static final String NOTIFICATION_TEXT =
-            "Doing heavy tasks.";
+            "Waiting for sensor data.";
 
     // Default icon of the background notification
     private static final String NOTIFICATION_ICON = "icon";
@@ -178,8 +178,6 @@ public class ForegroundService extends Service {
             notification.setPriority(Notification.PRIORITY_MIN);
         }
         
-        Log.e(TAG, "bigText" + bigText + " text=" + text);
-
         if (bigText || text.contains("\n")) {
             notification.setStyle(
                     new Notification.BigTextStyle().bigText(text));

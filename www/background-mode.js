@@ -382,9 +382,9 @@ exports._isActive = false;
  * Default values of all available options.
  */
 exports._defaults = {
-    title:   'App is running in background',
-    text:    'Doing heavy tasks.',
-    bigText: false,
+    title:   'Low power scanning active...',
+    text:    'Waiting for sensor data',
+    bigText: true,
     resume:  true,
     silent:  false,
     hidden:  true,
