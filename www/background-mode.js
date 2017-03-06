@@ -386,7 +386,7 @@ exports._defaults = {
     text:    'Waiting for sensor data',
     bigText: true,
     resume:  true,
-    silent:  false,
+    silent:  true,
     hidden:  true,
     color:   undefined,
     icon:    'icon'
